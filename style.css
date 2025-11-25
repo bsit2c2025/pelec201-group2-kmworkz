@@ -4,6 +4,14 @@ color:white;
 font-family:"Monaco", monospace;
 }
 
+body{   
+background-image: url(assets/background.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-color: #cccccc;
+}
+
 ul li{
     list-style:none;
     

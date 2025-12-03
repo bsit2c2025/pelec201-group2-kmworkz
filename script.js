@@ -1,5 +1,8 @@
+
+//  DO NOT TOUCH
+// A function for Navbar Navigation using SPA
 function loadPage(page) {
-    
+
     fetch(`pages/${page}.html`)
         .then(response => {
             if (!response.ok) throw new Error("Page not found");
@@ -25,3 +28,4 @@ document.addEventListener("DOMContentLoaded", () => {
     let page = window.location.hash.substring(1) || "home"; // Default to home
     loadPage(page);
 });
+

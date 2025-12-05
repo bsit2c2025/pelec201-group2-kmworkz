@@ -29,3 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
     loadPage(page);
 });
 
+// SERVICES MODAL HANDLING (SAFE FOR SPA)
+document.addEventListener("click", (e) => {
+
+    const modal = document.getElementById("modal-overlay");
+    const closeBtn = document.getElementById("closeModalBtn");
+
+    // OPEN MODAL (any inquire button)
+    if (e.target.id.startsWith("openModalBtn") || e.target.classList.contains("inquire-btn")) {
+        if (modal) modal.style.display = "flex";
+    }
+
+    // CLOSE MODAL (X button)
+    if (e.target.id === "closeModalBtn") {
+        if (modal) modal.style.display = "none";
+    }
+
+    // CLOSE MODAL (click outside)
+    if (modal && e.target === modal) {
+        modal.style.display = "none";
+    }
+
+});

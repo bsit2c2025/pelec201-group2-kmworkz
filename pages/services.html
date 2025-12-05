@@ -3,11 +3,9 @@
     
     <!--Mugs-->
     <div class="cardService">
-
         <div class="image-box">
-        <img src="assets/mugs.png" alt="cap" id = "capIcon">
+            <img src="assets/mugs.png" alt="cap" id = "capIcon">
         </div>
-
 
         <div class = "CapInfo">
             <h1 class="title">MUGS</h1>
@@ -20,7 +18,8 @@
             <li><span class="dot"></span>Free layout setup</li>
             </ul>
         </div>
-    <button class="inquire-btn">INQUIRE</button>
+    <button class="inquire-btn" id="openModalBtn1">INQUIRE</button>
+    
     </div>
 
     <!--cap-->
@@ -42,7 +41,7 @@
             <li><span class="dot"></span>Free digital proof before printing</li>
             </ul>
         </div>
-    <button class="inquire-btn">INQUIRE</button>
+    <button class="inquire-btn" id="openModalBtn2">INQUIRE</button>
     </div>
 
 
@@ -65,7 +64,7 @@
             <li><span class="dot"></span>Size option from XS to XXL</li>
             </ul>
         </div>
-    <button class="inquire-btn">INQUIRE</button>
+    <button class="inquire-btn" id="openModalBtn3">INQUIRE</button>
     </div>
 
     <!--plate-->
@@ -87,7 +86,7 @@
             <li><span class="dot"></span>Bulk order discount available</li>
             </ul>
         </div>
-    <button class="inquire-btn">INQUIRE</button>
+    <button class="inquire-btn" id="openModalBtn5">INQUIRE</button>
     </div>
 
      <!--Plate-->
@@ -109,8 +108,39 @@
             <li><span class="dot"></span>Free digital proof before printing</li>
             </ul>
         </div>
-    <button class="inquire-btn">INQUIRE</button>
+    <button class="inquire-btn" id="openModalBtn5">INQUIRE</button>
     </div>
 
+
+</div>
+
+<!-- 🔹 Modal Background -->
+<div id="modal-overlay">
+
+    <!-- 🔹 Modal Box -->
+    <div id="modal-box">
+
+        <form id="inquiry-form">
+            <span id="closeModalBtn">&times;</span>
+
+            <h2 id="form-title">INQUIRY INFORMATION</h2>
+
+            <label for="fullname" class="label">Full Name</label>
+            <input type="text" id="fullname" class="input-field" placeholder="Enter your name">
+
+            <label for="email" class="label">Email</label>
+            <input type="email" id="email" class="input-field" placeholder="name@example.com">
+
+            <label for="contact" class="label">Contact Number</label>
+            <input type="text" id="contact" class="input-field" placeholder="09123456789">
+
+            <label for="message" class="label">Message</label>
+            <textarea id="message" class="textarea-field" placeholder="Tell us more details or specific instructions..."></textarea>
+
+            <button type="submit" id="submit-btn">SUBMIT</button>
+
+        </form>
+
+    </div>
 
 </div>

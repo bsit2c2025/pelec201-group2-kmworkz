@@ -243,8 +243,6 @@ height: 60px;
 width: 60px;
 }
 
-
-
 .cardService {
     flex: 0 0 20em;
     width: 20%;
@@ -261,21 +259,13 @@ width: 60px;
     width: 140px;
     height: 220px;
     margin-bottom: 15px;
-    
-
-
-
-
-
 }
 #capIcon{
     position: relative;
     left: 100px;
     width: 100px;
     height: 125px;
-
 }
-
 
 .inquire-btn {
     margin-top: 20px;
@@ -288,14 +278,108 @@ width: 60px;
     color: white;
     cursor: pointer;
     transition: 0.2s;
-
-
 }
 
 .CapInfo {
     position: relative;
     bottom: 40px;
-
 }
 
+/* SERVICES */
 
+ /* ========= MODAL OVERLAY ========= */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none; /* hidden by default */
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    z-index: 999;
+}
+
+/* ========= MODAL BOX ========= */
+#modal-box {
+    background: #2E2E2E;
+    padding: 25px;
+    width: 360px;
+    border-radius: 6px;
+    position: relative;
+}
+
+/* ========= CLOSE BUTTON ========= */
+#closeModalBtn {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ========= TITLE ========= */
+#form-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* ========= LABELS ========= */
+.label {
+    display: block;
+    color: white;
+    font-size: 12.5px;
+    margin-bottom: 5px;
+}
+
+/* ========= INPUT FIELDS ========= */
+.input-field, 
+.textarea-field {
+    width: 95%;
+    padding: 10px;
+    background-color: #4D4D4D;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.textarea-field {
+    height: 90px;
+    resize: none;
+}
+
+/* ========= SUBMIT BUTTON ========= */
+#submit-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+#small-box {
+    width: 40px;
+    height: 15px;
+    background-color: #CFCFCF;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+/* Optional: Style for open button */
+#openModalBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+}
